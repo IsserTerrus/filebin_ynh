@@ -1,0 +1,6 @@
+#!/bin/bash
+
+domain=$(sudo yunohost app setting filebin domain)
+
+sudo rm -rf /var/www/filebin
+sudo rm -f /etc/nginx/conf.d/$domain.d/filebin.conf

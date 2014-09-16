@@ -1,0 +1,44 @@
+{
+    "name": "Filebin",
+    "id": "filebin",
+    "description": {
+        "en": "A minimalist, opensource online pastebin where the server has zero knowledge of pasted data - File Edition",
+        "fr": "Un pastebin minimaliste, libre et où le serveur n'a aucune connaissance des données copiées - En Version pour Fichiers"
+    },
+    "developer": {
+        "name": "Hollandais Volant - Package By IsserTerrus",
+        "email": "isserterrus@switchserver.fr",
+        "url": "http://lehollandaisvolant.net/?mode=links&id=20130724193812"
+    },
+    "multi_instance": "false",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for Filebin",
+                    "fr": "Choisissez un domaine pour Filebin"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for Filebin",
+                    "fr": "Choisissez un chemin pour Filebin"
+                },
+                "example": "/filebin",
+                "default": "/filebin"
+            },
+            {
+                "name": "is_public",
+                "ask": {
+                    "en": "Is it a public Filebin site ?",
+                    "fr": "Est-ce un site public ?"
+                },
+                "choices": ["Yes", "No"],
+                "default": "Yes"
+            }
+        ]
+    }
+}
